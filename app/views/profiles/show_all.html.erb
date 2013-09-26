@@ -1,0 +1,12 @@
+<!-- <h1>Smartest Students From Class</h1>
+<ul>
+	<li><%= link_to 'Justin Blaisdell', username_path(username: "justinblaisdell") %></li>
+	<li><%= link_to 'Michael James', username_path(username: 'michaeljames') %></li>
+	<li><%= link_to 'Yasmin Therese Fazelinia', username_path(username: 'yasmintheresefazelinia') %></li>
+</ul> -->
+
+<ul> Let's Go Makersquare
+    <% @profiles.each do |profile| %>
+        <li><%= link_to profile.full_name, username_path(profile.username) %></li>
+    <% end %>
+</ul>

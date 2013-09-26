@@ -11,4 +11,13 @@
  *= require_self
  *= require_tree .
  */
+ .facebook a {
+ 	color: black;
+ }
+
+ .facebook:hover a {
+ 	color: red;
+ }
+
  *= require foundation_and_overrides
+ 

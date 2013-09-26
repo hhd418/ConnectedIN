@@ -1,12 +1,12 @@
 ConnectedIn::Application.routes.draw do
   
-  root 'students#show_all'
+  root 'profiles#show_all'
+  get "/profiles" => 'profiles#show_all', as: 'show_profiles'
+  get '/profiles/:username' => 'profiles#show', as: 'username'
 
-  get "/students" => 'students#show_all', as: 'show_student'
 
-  get '/students/justin' => 'students#show_justin', as: 'justin_student'
-  get '/students/michael' => 'students#show_michael', as: 'michael_student'
-  get '/students/yasmin' => 'students#show_yasmin', as: 'yasmin_student'
 
-  # redirect_to 'http://www.rubyonrails.org'
+  # post '/profiles' => 'profiles#create'
+
+
 end
